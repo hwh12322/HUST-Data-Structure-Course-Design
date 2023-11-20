@@ -1,0 +1,22 @@
+1 硬件环境：
+处理器	11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz   2.69 GHz
+机带 RAM	16.0 GB (15.8 GB 可用)
+系统类型	64 位操作系统, 基于 x64 的处理器
+2 软件环境：
+版本	Windows 10 家庭中文版
+版本号	21H2
+安装日期	‎2021/‎8/‎5
+操作系统内部版本	19044.2006
+3 编辑环境 ：
+Visual Studio Code:  使用Makefile编译（也有可直接编译的全部整合源代码文件）
+Electron: 19.0.12
+Chromium: 102.0.5005.167
+Node.js: 16.14.2
+V8: 10.2.154.15-electron.0
+OS: Windows_NT x64 10.0.19044
+4 软件使用：
+打开SAT Solver.exe 有三个功能可供选择：
+1为数独游戏，会在软件同一文件夹下生成sudoku.cnf、sudoku.txt、sudoku.res、sudoku.cnf、sudokuAnswer.out四个文件。
+其中sudoku.txt保存的是当今的游戏进度、sudokuAnswer.out保存的是游戏答案。游戏有多种功能，根据提示进行游戏即可。
+2为SAT算例求解器，输入要求解的cnf算例名（无需输入.cnf，需要放在同一文件夹下）即可进行求解，结果和求解时间保存在sudoku.res中。
+3为SAT求解答案验证器，输入要验证的算例名（无需输入.cnf，需要放在同一文件夹下），将根据res文件进行验证，正确子句输出1，错误字句输出0。
